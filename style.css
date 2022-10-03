@@ -98,6 +98,15 @@ p::first-letter {
   transform: translateX(-200px);
   transition: 1s ease-in;
 }
+
+
+.picture-appears {
+  width: 60%;
+  padding: 2rem;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: 1s ease-in;
+}
 .overcome {
   padding: 2rem;
   background: rgba(52, 187, 255, 0.287);

@@ -7,3 +7,45 @@
 // Faire apparaitre la popup quand on est en bas du site
 
 // Bonus : quand on clicke sur la popup elle disparait pour toujours
+
+//navbar
+
+let lastScroll = 0;
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > lastScroll) {
+    navbar.style.height = "20px";
+  } else {
+    navbar.style.height = "90px";
+  }
+});
+
+//img-improve
+
+const imageImprove = document.getElementById("imgImprovise");
+
+window.addEventListener("scroll", () => {
+  window.scroll > 300;
+  {
+    imageImprove.style.opacity = 1;
+    imageImprove.style.transform = "translateX(" + 0 + "px) ";
+  }
+});
+
+//popup
+
+const popup = document.getElementById("popup");
+
+window.addEventListener("scroll", () => {
+  const { scrollTop, clientHeight } = document.documentElement;
+});
+
+//window.addEventListener("scroll", () => {
+//window.scrollY > 800;
+//{
+//popup.style.opacity = 1;
+//popup.style.transform = "translateX(" + 0 + "px) ";
+//}
+//});
+
+//disparition popup
