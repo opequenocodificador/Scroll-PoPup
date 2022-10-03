@@ -147,6 +147,11 @@ p::first-letter {
   transform: translateX(400px);
   transition: 1s ease-out;
 }
+
+.active {
+  transform: translateX(0%);
+  opacity: 1;
+}
 .pop-up-container {
   width: 100%;
   position: absolute;
@@ -207,3 +212,5 @@ p::first-letter {
 .fa-times-circle:active {
   transform: scale(1.5);
 }
+
+

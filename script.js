@@ -25,7 +25,7 @@ window.addEventListener("scroll", () => {
 const imageImprove = document.getElementById("imgImprovise");
 
 window.addEventListener("scroll", () => {
-  {
+  if (window.scrollY > 300) {
     imageImprove.style.opacity = 1;
     imageImprove.style.transform = "translateX(" + 0 + "px) ";
   }
@@ -36,11 +36,16 @@ window.addEventListener("scroll", () => {
 const PopUp = document.getElementById("popup");
 
 window.addEventListener("scroll", () => {
-  window.scrollY > 800;
-  {
-    popup.style.opacity = 1;
-    popup.style.transform = "translateX(" + 0 + "px) ";
+  if (window.scrollY > 1485) {
+    PopUp.style.opacity = 1;
+    PopUp.style.transform = "translateX(" + 0 + "px) ";
   }
 });
 
 //disparition popup
+
+const closeBox = document.getElementById("closeBtn");
+window.addEventListener("click", () => {
+  closeBox = PopUp.style.opacity = 0;
+  closeBox = PopUp.style.transform = "translateX(" + 400 + "px) ";
+});
