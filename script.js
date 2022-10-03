@@ -25,7 +25,6 @@ window.addEventListener("scroll", () => {
 const imageImprove = document.getElementById("imgImprovise");
 
 window.addEventListener("scroll", () => {
-  window.scroll > 300;
   {
     imageImprove.style.opacity = 1;
     imageImprove.style.transform = "translateX(" + 0 + "px) ";
@@ -34,18 +33,14 @@ window.addEventListener("scroll", () => {
 
 //popup
 
-const popup = document.getElementById("popup");
+const PopUp = document.getElementById("popup");
 
 window.addEventListener("scroll", () => {
-  const { scrollTop, clientHeight } = document.documentElement;
+  window.scrollY > 800;
+  {
+    popup.style.opacity = 1;
+    popup.style.transform = "translateX(" + 0 + "px) ";
+  }
 });
-
-//window.addEventListener("scroll", () => {
-//window.scrollY > 800;
-//{
-//popup.style.opacity = 1;
-//popup.style.transform = "translateX(" + 0 + "px) ";
-//}
-//});
 
 //disparition popup
